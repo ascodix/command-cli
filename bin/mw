@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+'use strict';
+
+process.title = 'mw';
+
+var resolve = require('resolve');
+var exit = require('exit');
+
+resolve('mw-cli', {
+    basedir: process.cwd()
+}, function(error, projectLocalCli) {
+
+    var mwcli;
+    if (error) {
+        mwcli = require('../lib/cli');
+    } else {
+        mwcli = require(projectLocalCli);
+    }
+
+    console.log('ICI');
+
+    mwcli.cli({
+        cliArgs: process.argv.slice(2),
+        inputStream: process.stdin,
+        outputStream: process.stdout
+    }).then(function(result) {
+        console.log('RESULT');
+        console.log(result);
+        var exitCode = typeof result === 'object' ? result.exitCode : result;
+    });
+});
