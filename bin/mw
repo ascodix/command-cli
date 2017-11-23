@@ -17,8 +17,6 @@ resolve('mw-cli', {
         mwcli = require(projectLocalCli);
     }
 
-    console.log('ICI');
-
     mwcli.cli({
         cliArgs: process.argv.slice(2),
         inputStream: process.stdin,
