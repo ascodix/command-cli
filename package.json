@@ -21,7 +21,9 @@
   },
   "devDependencies": {
     "copyfiles": "^1.2.0",
-    "cpx": "^1.5.0"
+    "cpx": "^1.5.0",
+    "json2typescript": "^1.0.5",
+    "@types/load-json-file": "^2.0.7"
   },
   "exclude": [
     "node_modules"

@@ -21,14 +21,12 @@ resolve('mw-cli', {
         mwcli = require(projectLocalCli);
     }
 
-    mwcli.default({
-        args: process.argv.slice(2),
-        basedir: process.cwd(),
-        stream: {
-            inputStream: process.stdin,
-            outputStream: process.stdout,
-            errorStream: process.stderr
-        }
+    console.log('ICI');
+
+    mwcli.cli({
+        cliArgs: process.argv.slice(2),
+        inputStream: process.stdin,
+        outputStream: process.stdout
     }).then(function(result) {
         var exitCode = typeof result === 'object' ? result.exitCode : result;
     });
