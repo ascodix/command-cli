@@ -10,7 +10,7 @@ process.on('unhandledRejection', (reason, p) => {
   console.log('Unhandled Rejection at:', p, 'reason:', reason);
 });
 
-resolve('genric-cli', {
+resolve('generic-cli', {
     basedir: process.cwd()
 }, function(error, projectLocalCli) {
 

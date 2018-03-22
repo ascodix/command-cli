@@ -20,8 +20,8 @@
     "gg": "./bin/gg"
   },
   "dependencies": {
-    "@angular-devkit/core": "^0.0.22",
-    "@angular-devkit/schematics": "0.0.42",
+    "@angular-devkit/core": "^0.0.29",
+    "@angular-devkit/schematics": "0.0.52",
     "@angular-devkit/schematics-tools": "^0.0.1",
     "@ngtools/json-schema": "^1.1.0",
     "@schematics/angular": "^0.1.13",
