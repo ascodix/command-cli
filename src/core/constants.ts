@@ -1,0 +1,29 @@
+export class Constants {
+    static readonly CLEAN_COMMAND_NAME = 'clean';
+    static readonly CLEAN_ALIASES = ['clean', 'c'];
+    static readonly CHECKNAME_COMMAND_NAME = 'check-filename';
+    static readonly CHECKNAME_ALIASES = ['check-filename', 'k'];
+    static readonly LINTHTML_COMMAND_NAME = 'linthtml';
+    static readonly LINTHTML_ALIASES = ['linthtml', 'lh'];
+    static readonly LINTTS_COMMAND_NAME = 'lintts';
+    static readonly LINTTS_ALIASES = ['lintts', 'lt'];
+    static readonly LINTLESS_COMMAND_NAME = 'lintless';
+    static readonly LINTLESS_ALIASES = ['lintless', 'll'];
+    static readonly COMPILETS_COMMAND_NAME = 'compilets';
+    static readonly COMPILETS_ALIASES = ['compilets', 'ts'];
+    static readonly COMPILELESS_COMMAND_NAME = 'compileless';
+    static readonly COMPILELESS_ALIASES = ['compileless', 'lc'];
+    static readonly REPLACETOKENS_COMMAND_NAME = 'replacetokens';
+    static readonly REPLACETOKENS_ALIASES = ['replacetokens', 'rt'];
+    static readonly MINIFYCSS_COMMAND_NAME = 'minifycss';
+    static readonly MINIFYCSS_ALIASES = ['minifycss', 'mc'];
+    static readonly MINIFYHTML_COMMAND_NAME = 'minifyhtml';
+    static readonly MINIFYHTML_ALIASES = ['minifyhtml', 'mh'];
+    static readonly MINIFYJS_COMMAND_NAME = 'minifyjs';
+    static readonly MINIFYJS_ALIASES = ['minifyhtml', 'mj'];
+    static readonly NGTEMPLATECONVERT_COMMAND_NAME = 'ngtemplateconvert';
+    static readonly NGTEMPLATECONVERT_ALIASES = ['ngtemplateconvert', 'tc'];
+    static readonly HELP_COMMAND_NAME = 'help';
+    static readonly HELP_ALIASES = ['help', 'h'];
+    static readonly CALL_HELP = 'callHelp';
+}
