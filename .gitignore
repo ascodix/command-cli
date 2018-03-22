@@ -30,3 +30,7 @@ dist/*
 
 # Playground tmp files
 .playground
+
+# Generate
+coverage/*
+output/*
