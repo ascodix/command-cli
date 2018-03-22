@@ -7,10 +7,10 @@ var resolve = require('resolve');
 var exit = require('exit');
 
 process.on('unhandledRejection', (reason, p) => {
-  console.log('Unhandled Rejection at:', p, 'reason:', reason);
+    console.log('Unhandled Rejection at:', p, 'reason:', reason);
 });
 
-resolve('generic-cli', {
+resolve('gg-cli', {
     basedir: process.cwd()
 }, function(error, projectLocalCli) {
 
@@ -21,10 +21,14 @@ resolve('generic-cli', {
         ggcli = require(projectLocalCli);
     }
 
-    ggcli.cli({
-        cliArgs: process.argv.slice(2),
-        inputStream: process.stdin,
-        outputStream: process.stdout
+    ggcli.default({
+        args: process.argv.slice(2),
+        basedir: process.cwd(),
+        stream: {
+            inputStream: process.stdin,
+            outputStream: process.stdout,
+            errorStream: process.stderr
+        }
     }).then(function(result) {
         var exitCode = typeof result === 'object' ? result.exitCode : result;
     });
