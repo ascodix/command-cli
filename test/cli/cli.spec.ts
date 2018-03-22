@@ -60,7 +60,7 @@ describe('Classe de l\'interface de commande en ligne Cli', () => {
 
         cli.run(badEnvironment).then(function (result: any) {
             expect(true).toBe(true);
-            expect(result).toEqual('The specified command is invalid. For available options, see `gg help`.');
+            expect(result).toEqual('The specified command is invalid. For available options, see `gc help`.');
             done();
         });
     });
@@ -73,7 +73,7 @@ describe('Classe de l\'interface de commande en ligne Cli', () => {
         });
     });
 
-    it('On test que quand aucune commande n\'est passé en paramètre (juste gg), c\'est la commande help par défaut qui est lancé', (done) => {
+    it('On test que quand aucune commande n\'est passé en paramètre (juste gc), c\'est la commande help par défaut qui est lancé', (done) => {
         cli.run(environment).then(function (result: any) {
             expect(true).toBe(true);
             expect(result).toEqual(0);
@@ -81,7 +81,7 @@ describe('Classe de l\'interface de commande en ligne Cli', () => {
         });
     });
 
-    it('On test que quand \'gg --help\' est passé en paramètre, c\'est la commande help qui est lancé', (done) => {
+    it('On test que quand \'gc --help\' est passé en paramètre, c\'est la commande help qui est lancé', (done) => {
         environment.cliArgs = ['--help'];
 
         cli.run(environment).then(function (result: any) {
@@ -91,7 +91,7 @@ describe('Classe de l\'interface de commande en ligne Cli', () => {
         });
     });
 
-    it('On test que quand \'gg macommande --help\' est passé en paramètre, c\'est la commande help de la commande \'macommande\' qui est lancé', (done) => {
+    it('On test que quand \'gc macommande --help\' est passé en paramètre, c\'est la commande help de la commande \'macommande\' qui est lancé', (done) => {
         environment.cliArgs = ['notimplementedcmd', '--help'];
 
         cli.run(environment).then(function (result: any) {

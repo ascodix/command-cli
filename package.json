@@ -1,7 +1,7 @@
 {
-  "name": "generic-cli",
+  "name": "@ascodix/command-cli",
   "version": "1.0.0",
-  "description": "- [About](#about) - [Installation](#installation) - [Documentation](#documentation) - [Development](#development) - [License](#license)",
+  "description": "CLI tool for launch generic command",
   "main": "lib/cli/index.js",
   "scripts": {
     "build:version": "tsc -v",
@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "gg": "./bin/gg"
+    "gg": "./bin/gc"
   },
   "dependencies": {
     "@angular-devkit/core": "^0.0.29",
