@@ -5,7 +5,7 @@ import { Report } from '../core/report';
 @JsonObject
 export class CliConfig {
 
-    public static readonly CLI_CONFIG_FILE_NAME = '.mw-cli.json';
+    public static readonly CLI_CONFIG_FILE_NAME = '.generic-cli.json';
 
     @JsonProperty('project', Project)
     private _project: Project = undefined;

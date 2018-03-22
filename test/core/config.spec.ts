@@ -13,7 +13,7 @@ describe('CliConfig', () => {
         jsonConvert = new JsonConvert();
         json = {
             "project": {
-                "name": "test mw-cli"
+                "name": "test generic-cli"
             },
             "report": {
                 "path": "report"
@@ -25,7 +25,7 @@ describe('CliConfig', () => {
 
     it('Instanciation de la configuration', () => {
         expect(config).toBeDefined();
-        expect(config.project.name).toEqual('test mw-cli');
+        expect(config.project.name).toEqual('test generic-cli');
     });
 
 });

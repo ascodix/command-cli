@@ -14,7 +14,7 @@ describe('Entrypoint', () => {
     let badJson: any = {};
     let json: any = {
         'project': {
-            'name': 'test mw-cli'
+            'name': 'test generic-cli'
         },
         'report': {
             'path': 'report'

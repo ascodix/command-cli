@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
-process.title = 'mw';
+process.title = 'gg';
 
 var resolve = require('resolve');
 var exit = require('exit');
@@ -10,7 +10,7 @@ process.on('unhandledRejection', (reason, p) => {
   console.log('Unhandled Rejection at:', p, 'reason:', reason);
 });
 
-resolve('mw-cli', {
+resolve('genric-cli', {
     basedir: process.cwd()
 }, function(error, projectLocalCli) {
 

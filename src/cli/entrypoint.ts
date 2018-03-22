@@ -41,7 +41,7 @@ export default function entrypoint(options: ICliOptions): Promise<any> {
     let replaceTokens: ReplaceTokens = new ReplaceTokens();
     let ngtemplateconvert: NgTemplateConvert = new NgTemplateConvert();
 
-    return ExternalsService.getFs().readJson('./.mw-cli.json').then((jsonObject: any) => {
+    return ExternalsService.getFs().readJson('./.generic-cli.json').then((jsonObject: any) => {
         config = jsonConvert.deserialize(jsonObject, CliConfig);
         let commands: Command<CommandConfig>[] = [];
 
@@ -78,7 +78,7 @@ export default function entrypoint(options: ICliOptions): Promise<any> {
         return cli.run(environment);
         }).catch((error: Error) => {
             console.log(error);
-        ConsoleWriter.getInstance(options.stream).error(new Message(`Unable to find '.mw-cli.json' file in ${options.basedir} !.`));
+        ConsoleWriter.getInstance(options.stream).error(new Message(`Unable to find '.generic-cli.json' file in ${options.basedir} !.`));
     });
 }
 

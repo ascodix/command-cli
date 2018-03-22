@@ -15,7 +15,7 @@ const log = factory.getLogger("lib/cli/index");
 export function cli(options: IOptions): Promise<any> {
     let cli = new Cli();
     let jsonConvert: JsonConvert = new JsonConvert();
-    let json = loadJsonFile.sync('./.mw-cli.json');
+    let json = loadJsonFile.sync('./.genric-cli.json');
     let config: CliConfig = jsonConvert.deserialize(json, CliConfig);
 
     let commands: Command[] = [

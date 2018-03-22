@@ -1,0 +1,8 @@
+{
+  "project": {
+    "name": "test generic-cli"
+  },
+  "report": {
+    "path": "report"
+  }
+}

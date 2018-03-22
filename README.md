@@ -14,7 +14,7 @@ Ce projet permet de lancer des commandes propres au framework et aux application
 
 Installation par npm::
 ```
-npm install -g mw-cli
+npm install -g generic-cli
 ```
 
 ## Documentation
