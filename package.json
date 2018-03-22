@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "gc": "./bin/gc"
+    "gcl": "./bin/gcl"
   },
   "dependencies": {
     "@angular-devkit/core": "^0.0.29",
