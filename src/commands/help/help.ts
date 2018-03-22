@@ -3,8 +3,6 @@ import { Option } from '../option';
 import { Constants } from '../../core/constants';
 import { CmdConfig } from '../class-cmd-config.decorator';
 import { HelpConfig } from './help-config';
-import {CleanConfig} from "../utils/clean/clean-config";
-import {AbstractReporter} from "../../core/output/report/abstract-reporter";
 
 /**
  * Commande d'aide
