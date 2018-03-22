@@ -6,10 +6,6 @@ process.title = 'gg';
 var resolve = require('resolve');
 var exit = require('exit');
 
-process.on('unhandledRejection', (reason, p) => {
-    console.log('Unhandled Rejection at:', p, 'reason:', reason);
-});
-
 resolve('gg-cli', {
     basedir: process.cwd()
 }, function(error, projectLocalCli) {
