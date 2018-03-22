@@ -32,9 +32,7 @@
     }
   },
   "exclude": [
-    "__nicole",
     "dist",
-    "node_modules",
-    "application"
+    "node_modules"
   ]
 }
