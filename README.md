@@ -78,7 +78,7 @@ import { Option } from '../option';
 import { Constants } from '../../core/constants';
 import { CmdConfig } from '../class-cmd-config.decorator';
 import { HelpConfig } from './help-config';
-import {CleanConfig} from "../clean/clean-config";
+import { CleanConfig } from "../clean/clean-config";
 
 /**
  * Commande d'aide
