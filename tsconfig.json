@@ -8,13 +8,12 @@
     "moduleResolution": "node",
     "noEmitOnError": true,
     "noImplicitAny": true,
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
+    /*"noUnusedParameters": true,
+    "noUnusedLocals": true,*/
     "outDir": "./dist",
-    "rootDir": ".",
+    "rootDir": "",
     "skipLibCheck": true,
     "sourceMap": true,
-    "sourceRoot": "",
     "target": "es6",
     "lib": [
       "es2017"
@@ -24,7 +23,18 @@
       "./node_modules/@types"
     ],
     "types": [
-
-    ]
-  }
+      "jasmine"
+    ],
+    "paths": {
+      "*": [
+        "src/@types/*"
+      ]
+    }
+  },
+  "exclude": [
+    "__nicole",
+    "dist",
+    "node_modules",
+    "application"
+  ]
 }
