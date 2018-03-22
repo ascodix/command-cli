@@ -1,11 +1,10 @@
 {
-  "name": "mw-cli",
+  "name": "generic-cli",
   "version": "1.0.0",
   "description": "- [About](#about) - [Installation](#installation) - [Documentation](#documentation) - [Development](#development) - [License](#license)",
   "main": "lib/cli/index.js",
   "scripts": {
     "build:version": "tsc -v",
-    "clean": "mw clean",
     "test": "karma start",
     "tsc:version": "tsc -v",
     "build:dist": "tsc",
@@ -18,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "mw": "./bin/mw"
+    "gg": "./bin/gg"
   },
   "dependencies": {
     "@angular-devkit/core": "^0.0.22",

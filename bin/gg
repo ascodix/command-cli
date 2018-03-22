@@ -14,14 +14,14 @@ resolve('genric-cli', {
     basedir: process.cwd()
 }, function(error, projectLocalCli) {
 
-    var mwcli;
+    var ggcli;
     if (error) {
-        mwcli = require('../src/cli/index');
+        ggcli = require('../src/cli/index');
     } else {
-        mwcli = require(projectLocalCli);
+        ggcli = require(projectLocalCli);
     }
 
-    mwcli.cli({
+    ggcli.cli({
         cliArgs: process.argv.slice(2),
         inputStream: process.stdin,
         outputStream: process.stdout
