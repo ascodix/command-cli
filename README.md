@@ -14,7 +14,7 @@ Ce projet permet de lancer des commandes propres au framework et aux application
 
 Installation par npm::
 ```
-npm install -g generic-cli
+npm install -g command-cli
 ```
 
 ## Documentation
