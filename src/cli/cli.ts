@@ -45,7 +45,7 @@ export class Cli {
             let command: Command<CommandConfig> = environment.commands.find((command: Command<CommandConfig>) => command.name == commandName);
 
             if (command == null) {
-                let message: Message = new Message(`The specified command is invalid. For available options, see \`gg help\`.`);
+                let message: Message = new Message(`The specified command is invalid. For available options, see \`gcl help\`.`);
                 this.context.consoleWriter.error(message);
                 throw new Error(message.content);
             }

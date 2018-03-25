@@ -1,23 +1,23 @@
 #!/usr/bin/env node
 'use strict';
 
-process.title = 'gg';
+process.title = 'gcl';
 
 var resolve = require('resolve');
 var exit = require('exit');
 
-resolve('gg-cli', {
+resolve('gcl-cli', {
     basedir: process.cwd()
 }, function(error, projectLocalCli) {
 
-    var ggcli;
+    var gclcli;
     if (error) {
-        ggcli = require('../src/cli/index');
+        gclcli = require('../src/cli/index');
     } else {
-        ggcli = require(projectLocalCli);
+        gclcli = require(projectLocalCli);
     }
 
-    ggcli.default({
+    gclcli.default({
         args: process.argv.slice(2),
         basedir: process.cwd(),
         stream: {

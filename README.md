@@ -14,7 +14,7 @@ Ce projet permet de lancer des commandes propres au framework et aux application
 
 Installation par npm::
 ```
-npm install -g generic-cli
+npm install -g command-cli
 ```
 
 ## Documentation
@@ -109,7 +109,7 @@ export class Macommande extends Command<MaCommandeConfig> {
 }
 ```
 
-**Le nom de la classe est très important**: en effet quand vous lancerez la commande via gg :  ```mw macommande```, macommande doit correspondre exactement au paramètre passé au constructeur
+**Le nom de la classe est très important**: en effet quand vous lancerez la commande via gcl :  ```mw macommande```, macommande doit correspondre exactement au paramètre passé au constructeur
 
 **Un fichier de configuration permet de changer les paramètres par défaut si besoin**: pour cela il faut le créer à la racine du projet. Sa nomenclature correspond au nom de la classe suivi de .config.json, dans notre exemple **macommande.config.json**
 Les prpriétés entre ce fichier de configuration, et la configuration par défaut situés dans l'annotation sont mergées. Mais si une propriétés est présente dans le fichier de configuration et dans l'annotation, c'est cette première qui est prise en compte.
