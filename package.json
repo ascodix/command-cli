@@ -4,10 +4,9 @@
   "description": "CLI tool for launch generic command",
   "main": "lib/cli/index.js",
   "scripts": {
-    "build:version": "tsc -v",
     "test": "karma start",
     "tsc:version": "tsc -v",
-    "build:dist": "tsc",
+    "build": "tsc",
     "copydir": "cpx \"bin/*\" dist/bin",
     "copyfiles": "copyfiles package.json LICENSE README.md CHANGELOG.md dist",
     "release:local:npm:all": "npm run build:dist && npm run copydir && npm run copyfiles && cd dist && npm install && npm link",
